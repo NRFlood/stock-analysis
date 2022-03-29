@@ -6,7 +6,7 @@ The purpose of this project was to help Steve be able to expand his stock analys
 
 ## Results
 
-By refactoring the VBA macro my computer was able to run the analysis much faster, cutting the time from an average of ~8 seconds down to less than 1 second.  Examples of the time elapsed time for both 2017 and 2018 showcase this improvement in the macros efficiency
+By refactoring the VBA macro my computer was able to run the analysis much faster, cutting the time from an average of ~8 seconds down to less than 1 second.  Examples of the time elapsed for both 2017 and 2018 showcase this improvement in the macros efficiency
 
 ![2017](https://github.com/NRFlood/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)
 ![2018](https://github.com/NRFlood/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
