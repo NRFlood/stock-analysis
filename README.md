@@ -6,7 +6,10 @@ The purpose of this project was to help Steve be able to expand his stock analys
 
 ## Results
 
-By refactoring the VBA macro my computer was able to run the analysis much faster, cutting the time from an average of ~8 seconds down to less than 1 second.  Examples of the time elapsed time for both 2017 and 2018 showcase this improvement in the macros efficiency (INSERT IMAGES BELOW).
+By refactoring the VBA macro my computer was able to run the analysis much faster, cutting the time from an average of ~8 seconds down to less than 1 second.  Examples of the time elapsed time for both 2017 and 2018 showcase this improvement in the macros efficiency
+
+![2017](https://github.com/NRFlood/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)
+![2018](https://github.com/NRFlood/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)
 
 Creating the tickerIndex variable allowed me to adjust the original code to remove one IF THEN statement that was calculating the total volume of each ticker, and simplify that part of the code to be a straight forward function (*tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value*). The tickerIndex also enabled us to remove a nested FOR LOOP statement where the macro was searching to find the first and last price of each stock, and then performing the output calculations within the same FOR LOOP. With the tickerIndex variable I wrote a second FOR LOOP that determined the start and end price of each ticker, and then increased the tickerIndex to the next ticker when complete.  From there I was able to complete all output calculations with one last FOR LOOP that leveraged the tickerIndex variable to access the correct index in each array.  These changes resulted in the increased efficiency referenced above.      
 
